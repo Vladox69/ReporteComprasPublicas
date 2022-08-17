@@ -9,7 +9,7 @@ import { DateFormComponent } from './date-form/date-form.component';
 @NgModule({
   declarations: [
     SidenavComponent,
-    DateFormComponent
+    DateFormComponent,
   ],
   imports: [
     CommonModule,
@@ -17,6 +17,7 @@ import { DateFormComponent } from './date-form/date-form.component';
   ],
   exports:[
     SidenavComponent,
+    DateFormComponent,
   ]
 })
 export class ComponentsModule { }

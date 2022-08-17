@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TablaReportesComponent } from './tabla-reportes/tabla-reportes.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    TablaReportesComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
+  ],
+  exports:[
+    TablaReportesComponent
   ]
 })
 export class ReportesModule { }

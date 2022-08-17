@@ -1,1 +1,19 @@
-
+<mat-card class="date-card">
+    <mat-card-title class="text-center">Proceso de compras</mat-card-title>
+    <mat-card-subtitle class="text-center mt-1">Filtro por fechas</mat-card-subtitle>
+    <form action="" [formGroup]="dateForm">
+        <div class="d-flex justify-content-between">
+            <mat-form-field>
+                <input matInput [matDatepicker]="fromDate" placeholder="Fecha inicial" formControlName="fromDate" />
+                <mat-datepicker-toggle matSuffix [for]="fromDate"></mat-datepicker-toggle>
+                <mat-datepicker touchUi #fromDate></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput [matDatepicker]="toDate" placeholder="Fecha final" formControlName="toDate" />
+                <mat-datepicker-toggle matSuffix [for]="toDate"></mat-datepicker-toggle>
+                <mat-datepicker touchUi #toDate></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <button mat-raised-button color="primary">Obtener resultados</button>
+    </form>
+</mat-card>

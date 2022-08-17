@@ -12,17 +12,17 @@ export class SidenavComponent implements OnDestroy{
   fillerNav = [
     {
       name: 'Home',
-      route: '',
+      route: '/home',
       icon: 'home',
     },
     {
       name: 'Reportes por Fecha',
-      route: 'reportes',
+      route: '/reportes',
       icon: 'date_range',
     },
     {
       name: 'Graficas',
-      route: 'graficos',
+      route: '/graficos',
       icon: 'assessment',
     },
   ];

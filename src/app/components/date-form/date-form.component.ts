@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-date-form',
@@ -11,5 +12,12 @@ export class DateFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  dateForm=new FormGroup({
+    fromDate:new FormControl('',[Validators.required]),
+    toDate:new FormControl('',[Validators.required])
+  })
+
 
 }
